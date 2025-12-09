@@ -52,7 +52,9 @@ pip3 install pandas scikit-learn tensorflow
 ```
 
 ### Running the Project
-1.  **Download the Dataset**: Due to its size, the dataset (`dataset_full.csv`) is not included in the repository. You must download it separately from the source or use the provided `wget` command from the project history.
+1.  **Download the Dataset**: The raw dataset (`dataset_full.csv`) and the cleaned, scaled dataset (`phishing_dataset_clean.csv`) are too large for direct inclusion in this repository (exceeding GitHub's 100MB limit). You must download the raw data and run the `data_preparation.py` script to generate the cleaned data and the necessary NumPy arrays for training.
+
+**Raw Dataset Source**: [https://github.com/GregaVrbancic/Phishing-Dataset](https://github.com/GregaVrbancic/Phishing-Dataset)
 2.  **Prepare Data**: Run the data preparation script.
     ```bash
     python3 data_preparation.py
