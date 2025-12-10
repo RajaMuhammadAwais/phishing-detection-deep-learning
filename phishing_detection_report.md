@@ -85,10 +85,32 @@ The confusion matrix further illustrates the model's predictive power:
 
 The model correctly identified **11,250** legitimate websites and **5,627** phishing websites. The number of false negatives (phishing sites missed) is **503**, which is a critical metric in security applications, and the model's performance in this area is strong.
 
-## 4. Conclusion
+## 4. Comparative Analysis of High-Accuracy Algorithms
+
+To contextualize the performance of the developed 1D CNN model, a brief review of state-of-the-art machine learning (ML) and deep learning (DL) algorithms for phishing detection was conducted. The table below summarizes the reported accuracy of various high-performing models from recent literature:
+
+| Algorithm/Model | Reported Accuracy | Source | Key Feature/Method |
+| :--- | :--- | :--- | :--- |
+| **XGBoost** | 97.78% | [2] | Explainable ML, Kaggle Dataset |
+| **1D-CNNPD + Bi-GRU** | 99.68% (Recall) | [3] | Augmented Deep Learning Model |
+| **SMO (Sequential Minimal Optimization)** | 95.39% | [4] | Traditional ML, Feature Selection |
+| **1D CNN (This Study)** | **95.19%** | [1] | Feature-Engineered Data |
+| **CNN** | 96.76% | [5] | Raw URL and HTML features |
+| **Logistic Regression** | Highest Overall | [6] | Traditional ML, Maximized Reliability |
+
+The comparative analysis shows that while the developed 1D CNN model achieves a high accuracy of **95.19%**, more complex models like **XGBoost** and augmented deep learning architectures (e.g., **1D-CNNPD + Bi-GRU**) can achieve even higher performance, often exceeding 97%. This suggests that future work could focus on integrating more advanced feature engineering or exploring hybrid deep learning models to further improve the detection rate.
+
+## 5. Conclusion
 
 The developed 1D CNN model for phishing website detection, utilizing a feature-engineered dataset, achieved an impressive **95.19% accuracy** on the test set. The results demonstrate the effectiveness of applying deep learning, specifically convolutional layers, to structured feature data for high-stakes binary classification problems in cybersecurity. The model is robust and provides a strong foundation for a real-time phishing detection system.
 
-## 5. References
+## 6. References
+
+[1] GregaVrbancic. *Phishing-Dataset*. GitHub. Available at: [https://github.com/GregaVrbancic/Phishing-Dataset](https://github.com/GregaVrbancic/Phishing-Dataset)
+[2] KMM Uddin et al. *Explainable Machine Learning for Phishing Site Detection: A...*. IET Research. Available at: [https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/tje2.70110](https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/tje2.70110)
+[3] N Altwaijry et al. *Advancing Phishing Email Detection: A Comparative Study...*. MDPI. Available at: [https://www.mdpi.com/1424-8220/24/7/2077](https://www.mdpi.com/1424-8220/24/7/2077)
+[4] AO Balogun et al. *Improving the phishing website detection using empirical...*. PMC. Available at: [https://pmc.ncbi.nlm.nih.gov/articles/PMC8264617/](https://pmc.ncbi.nlm.nih.gov/articles/PMC8264617/)
+[5] C Opara et al. *Detecting phishing web pages by exploiting raw URL and...*. ScienceDirect. Available at: [https://www.sciencedirect.com/science/article/pii/S0957417423016858](https://www.sciencedirect.com/science/article/pii/S0957417423016858)
+[6] A Kumar et al. *Machine Learning Approaches for Detecting Phishing Attacks...*. IEEE Xplore. Available at: [https://ieeexplore.ieee.org/document/11140801/](https://ieeexplore.ieee.org/document/11140801/)
 
 [1] GregaVrbancic. *Phishing-Dataset*. GitHub. Available at: [https://github.com/GregaVrbancic/Phishing-Dataset](https://github.com/GregaVrbancic/Phishing-Dataset)
